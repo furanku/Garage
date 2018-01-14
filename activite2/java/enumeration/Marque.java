@@ -5,15 +5,15 @@ package it.activite2.java.enumeration;
  */
 	public enum Marque {
 		/**
-		 * RENO mark can be add as mark type to a car
+		 * RENO mark can be added as mark type to a car
 		 */
 		RENO,
 		/**
-		 * PIGEOT mark can be add as mark type to a car
+		 * PIGEOT mark can be added as mark type to a car
 		 */
 		PIGEOT,
 		/**
-		 * TROEN mark can be add as mark type to a car
+		 * TROEN mark can be added as mark type to a car
 		 */
 		TROEN;
 	}
