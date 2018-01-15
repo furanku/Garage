@@ -21,7 +21,7 @@ public class SiegeChauffant implements Option {
 	@Override
 	public double getPrix() {
 		
-		return prix;
+		return 350.0d;
 	}
 
 }
