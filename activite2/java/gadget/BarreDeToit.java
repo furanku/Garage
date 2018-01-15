@@ -22,7 +22,7 @@ public class BarreDeToit implements Option{
 	 */
 	@Override
 	public  double getPrix() {
-		return prix;
+		return 150.0d;
 	}
 
 }
