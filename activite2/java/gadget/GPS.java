@@ -23,7 +23,7 @@ public class GPS implements Option {
 	 */
 	@Override
 	public  double getPrix() {
-		return prix;
+		return 120.0d;
 	}
 
 }
