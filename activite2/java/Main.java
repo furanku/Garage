@@ -51,6 +51,15 @@ public class Main {
 	   	 d4_2.addOption(new VitreElectrique());
 	   	 garage.addVoiture(d4_2); 
 	   	 
+	   	 Vehicule A300B_4 = new A300B();
+	   	 A300B_4.setMoteur(new MoteurHybride("ESSENCE/ELECTRIQUE", 5550.55d));
+	   	 A300B_4.addOption(new SiegeChauffant());
+	   	 A300B_4.addOption(new BarreDeToit());
+	   	 A300B_4.addOption(new GPS());
+	   	 A300B_4.addOption(new VitreElectrique());
+	   	 garage.addVoiture(A300B_4);
+	   	
+	   	 
 	    }
 	}
 
