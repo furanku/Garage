@@ -1,9 +1,10 @@
 package it.activite2.java.vehicule;
 
 import java.util.List;
+
 import it.activite2.java.enumeration.Marque;
 import it.activite2.java.gadget.Option;
-import it.activite2.java.moteur.*;
+import it.activite2.java.moteur.Moteur;
 /**
  * Vehicule is the class which represents the car 
  * Each car is characterized by
@@ -24,26 +25,26 @@ public class Vehicule {
 	/**
 	 * Price of this car
 	 */
-	protected double prix;
+	private double prix;
 	/**
 	 * name of this car
 	 */
-	protected String nom;
+	private String nom;
 	/**
 	 * list of all the options 
 	 * @see Option
 	 */
-	protected List<Option> options;
+	private	 List<Option> options;
 	/**
 	 * mark of this car 
 	 * @see Marque
 	 */
-	protected Marque nomMarque;
+	private Marque nomMarque;
 	/**
 	 * type of this engine
 	 * @see Moteur
 	 */
-	protected Moteur moteur;
+	private Moteur moteur;
 		
 	/**
 	 * Method to add an option to the car 
@@ -51,15 +52,17 @@ public class Vehicule {
 	 * 			 option of this car
 	 */
 	public void addOption(Option opt) {
-		setOption(opt);
+		opt.getPrix();
 	}
+	
 	/**
 	 * getter 
 	 * @return the mark of this car 
 	 */
 	public Marque getMarque() {
 		return nomMarque;
-	}
+		
+		}
 	/**
 	 * setter 
 	 * @param nomMarque
@@ -80,8 +83,8 @@ public class Vehicule {
 	 * @param opt
 	 * 			 option of this car 
 	 */
-	public void setOption(Option opt) {
-		this.options = (List<Option>) opt;
+	public void setOption(List<Option> opt) {
+		this.options =  opt;
 	}
 	/**
 	 * getter
@@ -112,6 +115,10 @@ public class Vehicule {
 	 */
 	public Moteur getMoteur() {
 		return moteur;
+	}
+	
+	public String toString() {
+		return "";
 	}
 
 }
