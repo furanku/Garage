@@ -21,7 +21,7 @@ private double prix;
 	@Override
 	public double getPrix() {
 		
-		return prix;
+		return 450.0d;
 	}
 
 }
