@@ -20,7 +20,7 @@ public class Climatisation implements Option {
 	 */
 	@Override
 	public double getPrix() {
-		return prix;
+		return 220.0d;
 	}
 
 }
