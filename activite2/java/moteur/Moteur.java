@@ -24,15 +24,15 @@ public abstract class Moteur {
 	 * Type of this engine
 	 * @see TypeMoteur
 	 */
-	protected TypeMoteur type;
+	private TypeMoteur type;
 	/**
 	 * cubic capacity of this engine
 	 */
-	protected String cylindre;
+	private String cylindre;
 	/**
 	 * price of this engine
 	 */
-	protected double prix;
+	private double prix;
 	/**
 	 * Constructor of this engine
 	 * @param cylindre
@@ -82,6 +82,6 @@ public abstract class Moteur {
 	 */
 	@Override
 	public String toString() {
-		return "";
+		return "Moteur"+getCylindre()+" chevaux "+"("+getPrix()+") ";
 	}
 }
