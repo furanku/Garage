@@ -24,7 +24,7 @@ public abstract class Moteur {
 	 * Type of this engine
 	 * @see TypeMoteur
 	 */
-	private TypeMoteur type;
+	protected TypeMoteur type;
 	/**
 	 * cubic capacity of this engine
 	 */
@@ -82,6 +82,6 @@ public abstract class Moteur {
 	 */
 	@Override
 	public String toString() {
-		return "Moteur"+getCylindre()+" chevaux "+"("+getPrix()+") ";
+		return "Moteur" + type + getCylindre()+ " chevaux " + "(" + getPrix() + ") ";
 	}
 }
