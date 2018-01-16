@@ -40,6 +40,22 @@ public class Vehicule {
 	 * @see Marque
 	 */
 	private Marque nomMarque;
+	
+	/**
+	 * getter 
+	 * @return nom
+	 */
+	public String getNom() {
+		return nom;
+	}
+	/**
+	 * setter
+	 * @param nom
+	 */
+	public void setNom(String nom) {
+		this.nom = nom;
+	}
+
 	/**
 	 * type of this engine
 	 * @see Moteur
@@ -63,14 +79,7 @@ public class Vehicule {
 		return nomMarque;
 		
 		}
-	/**
-	 * setter 
-	 * @param nomMarque
-	 * 				   mark of this car 
-	 */
-	public void setMarque(Marque nomMarque) {
-		this.nomMarque = nomMarque;
-	}
+	
 	/**
 	 * getter
 	 * @return options
@@ -118,7 +127,7 @@ public class Vehicule {
 	}
 	
 	public String toString() {
-		return "";
+		return getMarque() + " : " + getNom() + moteur.toString()+ " ";
 	}
 
 }
