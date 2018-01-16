@@ -12,10 +12,6 @@ package it.activite2.java.gadget;
 
 public class BarreDeToit implements Option{
 	/**
-	 * Price of this option
-	 */
-	private double prix;
-	/**
 	 * This method overrides the method of the interface option
 	 * @see Option#getPrix()
 	 * @return the price of this option
