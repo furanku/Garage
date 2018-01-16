@@ -1,4 +1,7 @@
 package it.activite2.java.moteur;
+
+import it.activite2.java.enumeration.TypeMoteur;
+
 /**
  * This class inherit from the "Moteur" class 
  * @see Moteur 
@@ -16,6 +19,7 @@ public class MoteurElectrique extends Moteur {
 
 	public MoteurElectrique(String cylindre, double prix) {
 		super(cylindre, prix);
+		type = TypeMoteur.ELECTRIQUE;
 	}
 
 }
