@@ -1,5 +1,7 @@
 package it.activite2.java.gadget;
 
+import java.io.Serializable;
+
 /**
  * <p>Option roof rack that can be added to a car 
  * This option implements the interface Option
@@ -10,7 +12,19 @@ package it.activite2.java.gadget;
  *
  */
 
-public class BarreDeToit implements Option{
+public class BarreDeToit implements Option, Serializable{
+	
+	private static final long serialVersionUID = 1L;
+	
+	/**
+	 * to set and get the name of this option
+	 * @return Barre de Toit
+	 */
+	@Override
+	public String toString() {
+		return "Barre de Toit" + "("+getPrix()+"€)";
+	}
+	
 	/**
 	 * This method overrides the method of the interface option
 	 * @see Option#getPrix()
@@ -20,5 +34,7 @@ public class BarreDeToit implements Option{
 	public  double getPrix() {
 		return 150.0d;
 	}
+	
+	
 
 }

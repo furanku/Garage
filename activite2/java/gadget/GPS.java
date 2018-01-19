@@ -2,6 +2,9 @@
  * <b>package of all the gadgets that can be added to a car</b>
  */
 package it.activite2.java.gadget;
+
+import java.io.Serializable;
+
 /**
  * <p>Option GPS that can be added to a car 
  * This option implements the interface Option
@@ -11,7 +14,18 @@ package it.activite2.java.gadget;
  * @author furanku
  */
 
-public class GPS implements Option {
+public class GPS implements Option,Serializable {
+	
+	private static final long serialVersionUID = 1L;
+	/**
+	 * to set and get the name of this option
+	 * @return GPS
+	 */
+	@Override
+	public String toString() {
+		return "GPS" + "("+getPrix()+"€)";
+	}
+	
 	/**
 	 * This method overrides the method of the interface option
 	 * @see Option#getPrix()
