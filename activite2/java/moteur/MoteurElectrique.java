@@ -1,5 +1,7 @@
 package it.activite2.java.moteur;
 
+import java.io.Serializable;
+
 import it.activite2.java.enumeration.TypeMoteur;
 
 /**
@@ -8,7 +10,10 @@ import it.activite2.java.enumeration.TypeMoteur;
  * @author furanku
  */
 
-public class MoteurElectrique extends Moteur {
+public class MoteurElectrique extends Moteur implements Serializable {
+	
+	private static final long serialVersionUID = 8576756659340475872L;
+
 	/**
 	 * Constructor of this engine type 
 	 * @param cylindre
@@ -16,7 +21,6 @@ public class MoteurElectrique extends Moteur {
 	 * @param prix
 	 * 			  price
 	 */		
-
 	public MoteurElectrique(String cylindre, double prix) {
 		super(cylindre, prix);
 		type = TypeMoteur.ELECTRIQUE;
