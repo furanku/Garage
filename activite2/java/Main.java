@@ -4,12 +4,11 @@ import it.activite2.java.moteur.*;
 import it.activite2.java.gadget.*;
 import it.activite2.java.vehicule.*;
 
-
 public class Main {
 
 	public static void main(String[] args) {
-		 Garage garage = new Garage();   
-	   	 System.out.println(garage);
+		Garage garage = new Garage();   
+		System.out.println(garage);
 	   	 
 	   	 Vehicule lag1 = new Lagouna();
 	   	 lag1.setMoteur(new MoteurEssence("150 Chevaux", 10256d));
@@ -52,14 +51,13 @@ public class Main {
 	   	 garage.addVoiture(d4_2); 
 	   	 
 	   	 Vehicule A300B_4 = new A300B();
-	   	 A300B_4.setMoteur(new MoteurHybride("ESSENCE/ELECTRIQUE", 5550.55d));
+	   	 A300B_4.setMoteur(new MoteurHybride("ESSENCE/ELECTRIQUE", 15550.55d));
 	   	 A300B_4.addOption(new SiegeChauffant());
 	   	 A300B_4.addOption(new BarreDeToit());
 	   	 A300B_4.addOption(new GPS());
 	   	 A300B_4.addOption(new VitreElectrique());
 	   	 garage.addVoiture(A300B_4);
 	   	
-	   	 
 	    }
 	}
 
