@@ -1,5 +1,7 @@
 package it.activite2.java.moteur;
 
+import java.io.Serializable;
+
 import it.activite2.java.enumeration.TypeMoteur;
 /**
  * <p>Abstract class of the engine with all his characteristics
@@ -19,20 +21,26 @@ import it.activite2.java.enumeration.TypeMoteur;
  * </p>
  * @author furanku
  */
-public abstract class Moteur {
+public abstract class Moteur implements Serializable{
+	
+	private static final long serialVersionUID = -7212899321223914144L;
+	
 	/**
 	 * Type of this engine
 	 * @see TypeMoteur
 	 */
 	protected TypeMoteur type;
+	
 	/**
 	 * cubic capacity of this engine
 	 */
 	private String cylindre;
+	
 	/**
 	 * price of this engine
 	 */
 	private double prix;
+	
 	/**
 	 * Constructor of this engine
 	 * @param cylindre
@@ -45,6 +53,7 @@ public abstract class Moteur {
 		setCylindre(cylindre);
 		setPrix(prix);
 	}
+	
 	/**
 	 * getter of the cubic capacity
 	 * @return this engine cubic capacity
@@ -52,6 +61,7 @@ public abstract class Moteur {
 	public String getCylindre() {
 		return cylindre;
 	}
+	
 	/**
 	 * setter of the cubic capacity
 	 * @param cylindre
@@ -60,6 +70,7 @@ public abstract class Moteur {
 	public void setCylindre(String cylindre) {
 		this.cylindre = cylindre;
 	}
+	
 	/**
 	 * getter of the price
 	 * @return price of this engine
@@ -67,6 +78,7 @@ public abstract class Moteur {
 	public double getPrix() {
 		return prix;
 	}
+	
 	/**
 	 * setter of the price
 	 * @param prix
@@ -82,6 +94,6 @@ public abstract class Moteur {
 	 */
 	@Override
 	public String toString() {
-		return "Moteur" + type + getCylindre()+ " chevaux " + "(" + getPrix() + ") ";
+		return " Moteur" + " "+ type +" " + getCylindre()+ " (" + getPrix() + "€" + ") ";
 	}
 }
