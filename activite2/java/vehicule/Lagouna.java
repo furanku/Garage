@@ -1,5 +1,7 @@
 package it.activite2.java.vehicule;
 
+import java.io.Serializable;
+
 import it.activite2.java.enumeration.Marque;
 
 /**
@@ -8,7 +10,10 @@ import it.activite2.java.enumeration.Marque;
  * @author furanku
  *
  */
-public class Lagouna extends Vehicule {
+public class Lagouna extends Vehicule implements Serializable {
+	
+	private static final long serialVersionUID = 6539011154082270956L;
+
 	/**
 	 * setting this mark,each A300B will always have RENO as mark 
 	 * @see Vehicule#getMarque()
@@ -19,5 +24,4 @@ public class Lagouna extends Vehicule {
 	
 		return Marque.RENO;
 	}
-
 }

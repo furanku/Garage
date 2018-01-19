@@ -1,5 +1,7 @@
 package it.activite2.java.vehicule;
 
+import java.io.Serializable;
+
 import it.activite2.java.enumeration.Marque;
 
 /**
@@ -9,7 +11,10 @@ import it.activite2.java.enumeration.Marque;
  *
  */
 
-public class D4 extends Vehicule {
+public class D4 extends Vehicule implements Serializable{
+	
+	private static final long serialVersionUID = -7009516516237005350L;
+
 	/**
 	 * setting this mark,each D4 will always have TROEN as mark
 	 * @see Vehicule#getMarque()
@@ -20,5 +25,4 @@ public class D4 extends Vehicule {
 	
 		return Marque.TROEN;
 	}
-
 }
