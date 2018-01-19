@@ -7,7 +7,7 @@ package it.activite2.java.gadget;
 
 public interface Option {
 	/**
-	 * this method is abstract must be override
+	 * this methods is abstract must be override
 	 * @see BarreDeToit#getPrix()
 	 * @see Climatisation#getPrix()
 	 * @see GPS#getPrix()
@@ -16,5 +16,8 @@ public interface Option {
 	 *  
 	 * @return nothing 
 	 */
-	public double getPrix();
+	public double getPrix();//to get the price of each added option
+	
+	public  String toString();//to get the price of each added option
+
 }
