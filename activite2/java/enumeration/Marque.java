@@ -1,19 +1,20 @@
 package it.activite2.java.enumeration;
+
 /**
  * The enumeration of the cars' marks
- *@author furanku
+ *@author Furanku
  */
 	public enum Marque {
 		/**
-		 * RENO mark can be added as mark type to a car
+		 * RENO mark can be added as mark's type of a car
 		 */
 		RENO,
 		/**
-		 * PIGEOT mark can be added as mark type to a car
+		 * PIGEOT mark can be added as mark's type of a car
 		 */
 		PIGEOT,
 		/**
-		 * TROEN mark can be added as mark type to a car
+		 * TROEN mark can be added as mark's type of a car
 		 */
 		TROEN;
 	}
