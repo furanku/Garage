@@ -95,12 +95,12 @@ public class Vehicule implements Serializable{
 	public String getOptions() {
 		String affiche = "";
 	
-		for(int i=0;i<options.size();i++) {
-			if(i+1 == options.size()) {
-				affiche += options.get(i).toString();
+		for(int i=0;i<this.options.size();i++) {
+			if(i+1 == this.options.size()) {
+				affiche += this.options.get(i).toString();
 			}
 			else {
-				affiche += options.get(i).toString() + ", ";
+				affiche += this.options.get(i).toString() + ", ";
 			}
 		}
 		return affiche;
@@ -111,11 +111,12 @@ public class Vehicule implements Serializable{
 	 * @return price
 	 */
 	public double getPrix() {
-		for(int i=0;i<options.size();i++) {
-		prix+=options.get(i).getPrix();
+		this.prix=0;
+		for(int i=0;i<this.options.size();i++) {
+		this.prix+=this.options.get(i).getPrix();
 		}
-		prix+=moteur.getPrix();
-		return prix;
+		this.prix+=this.moteur.getPrix();
+		return this.prix;
 	}
 
 	/**
@@ -152,7 +153,9 @@ public class Vehicule implements Serializable{
 				+ moteur.toString() 
 				+ "[" 
 				+ getOptions()
-				+ "] "  ;
+				+ "] d'une valeur totale de " 
+			    + getPrix() 
+			    + " €\n"; 
 	}
 	
 }
