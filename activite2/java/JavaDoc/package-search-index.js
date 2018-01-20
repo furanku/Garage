@@ -1,0 +1,1 @@
+packageSearchIndex = [{"l":"it.activite2.java"},{"l":"it.activite2.java.enumeration"},{"l":"it.activite2.java.gadget"},{"l":"it.activite2.java.moteur"},{"l":"it.activite2.java.vehicule"}]
