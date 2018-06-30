@@ -1,4 +1,4 @@
-# activity_garage by Openclassrooms
+# Creation of a car workshop in Java
  create a garage, but you will also have to save it in a file ... 
  The goal being that every time you add a new vehicle in your garage,
  it automatically saves itself in a file. It will also automatically load the garage during its instantiation.
